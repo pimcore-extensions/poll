@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+    <plugin>
+        <pluginName>Poll</pluginName>
+        <pluginDescription>
+            Create and publish polls, collect responses and analyze results.
+        </pluginDescription>
+        <pluginNiceName>Poll</pluginNiceName>
+        <pluginIcon>/plugins/Poll/static/img/chart_bar_icon.png</pluginIcon>
+        <pluginServer>plugins.pimcore.org</pluginServer>
+        <pluginVersion>1.0.0</pluginVersion>
+        <pluginRevision>1</pluginRevision>
+        <pluginBuildTimestamp></pluginBuildTimestamp>
+        <pluginClassName>Poll_Plugin</pluginClassName>
+        <pluginIncludePaths>
+            <path>/Poll/models</path>
+            <path>/Poll/controllers</path>
+        </pluginIncludePaths>
+        <pluginNamespaces>
+            <namespace>Poll</namespace>
+        </pluginNamespaces>
+        <pluginJsPaths>
+            <path>/Poll/static/js/lib/vtypes.js</path>
+            <path>/Poll/static/js/admin/plugin.js</path>
+            <path>/Poll/static/js/admin/poll.js</path>
+            <path>/Poll/static/js/admin/edit.js</path>
+            <path>/Poll/static/js/admin/report.js</path>
+            <path>/Poll/static/js/admin/list.js</path>
+        </pluginJsPaths>
+        <pluginCssPaths>
+            <path>/Poll/static/css/admin.css</path>
+        </pluginCssPaths>
+    </plugin>
+</zend-config>

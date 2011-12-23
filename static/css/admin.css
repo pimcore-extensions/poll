@@ -1,0 +1,24 @@
+.plugin_poll_icon {
+    background: url(/pimcore/static/img/icon/chart_bar.png) left center no-repeat !important;
+}
+
+.plugin_poll_icon_add {
+    background: url(/pimcore/static/img/icon/chart_bar_add.png) left center no-repeat !important;
+}
+
+.plugin_poll_icon_edit {
+    background: url(/pimcore/static/img/icon/chart_bar_edit.png) left center no-repeat !important;
+}
+
+.plugin_poll_icon_report {
+    background: url(/pimcore/static/img/icon/chart_pie.png) left center no-repeat !important;
+}
+
+.plugin_poll_grid_current {
+    background: url(/pimcore/static/img/icon/bool.png) center center no-repeat !important;
+}
+
+.grid-row-insert-below {border-bottom:1px solid #3366cc;}
+.grid-row-insert-above {border-top:1px solid #3366cc;}
+
+.x-grid3-row-body ul.answers {list-style:disc;margin:0 0 6px 25px;}
