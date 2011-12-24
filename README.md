@@ -17,8 +17,11 @@ Just like other Pimcore plugins:
 If everything went smoothly you will find `Poll` options in `Extras` menu.
 
 After you created and published a poll you can place it on website using simple snippet:
+
 *   Create new empty snippet in `Documents` and set controller/action on `settings` tab:
+
 ![Poll website snippet](https://raw.github.com/rafalgalka/pimcore-poll-plugin/develop/docs/screenshots/website_snippet.png)
+
 *   Create `SnippetController` class with empty `pollAction` method in `/website/controllers/`:
 
 ```php
