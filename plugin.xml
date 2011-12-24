@@ -21,6 +21,7 @@
         </pluginNamespaces>
         <pluginJsPaths>
             <path>/Poll/static/js/lib/vtypes.js</path>
+            <path>/pimcore/static/js/lib/ext-plugins/ux/RowExpander.js</path>
             <path>/Poll/static/js/admin/plugin.js</path>
             <path>/Poll/static/js/admin/poll.js</path>
             <path>/Poll/static/js/admin/edit.js</path>
