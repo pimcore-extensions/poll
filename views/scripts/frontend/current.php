@@ -6,7 +6,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
     <?php endif; ?>
     <?php if (!$this->getParam('omitStyles')): ?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/black-tie/jquery-ui.css"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/black-tie/jquery-ui.css" type="text/css" charset="utf-8" />
     <?php endif; ?>
     <script type="text/javascript" src="/plugins/Poll/static/js/frontend/poll.js"></script>
 
