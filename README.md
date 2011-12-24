@@ -75,6 +75,6 @@ You can find some screenshots [here](https://github.com/rafalgalka/pimcore-poll-
 ## Notes ##
 
 ### Pimcore plugin menu ###
-If you merge [this commit](http://bit.ly/sIROeN) into your project Poll options
+If you merge [this commit](http://bit.ly/sIROeN) into your project, Poll options
 will appear in separate `Plugins` menu in main pimcore toolbar:
 ![Pimcore Plugins menu](https://raw.github.com/rafalgalka/pimcore-poll-plugin/develop/docs/screenshots/admin_menu_plugins.png)
