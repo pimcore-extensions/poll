@@ -25,6 +25,7 @@ After you created and published a poll you can place it on website using simple 
 *   Create `SnippetController` class with empty `pollAction` method in `/website/controllers/`:
 
 ```php
+<?php
 class SnippetController extends Website_Controller_Action
 {
     public function pollAction()
