@@ -50,6 +50,9 @@ class Poll_FrontendController extends Website_Controller_Action
     public function currentAction()
     {
         $question = Poll_Question::getCurrent();
+        if(!isset($this->_session->poll[$question->getId()])) {
+            $question->incrementViewsCount();
+        }
         $this->_session->poll[$question->getId()] = true;
         $this->view->voted = isset($_COOKIE['poll_' . $question->getId()]) ? 1 : 0;
         $this->view->question = $question;
@@ -77,6 +80,10 @@ class Poll_FrontendController extends Website_Controller_Action
 
         if($this->_request->isPost()) {
 
+            if(isset($_COOKIE['poll_' . $question->getId()])) {
+                throw new Zend_Controller_Action_Exception('Question already voted');
+            }
+
             $answers = $this->_request->getPost('answer');
             if(!is_array($answers) || empty($answers)){
                 throw new Zend_Controller_Action_Exception('No response data provided');
@@ -93,7 +100,6 @@ class Poll_FrontendController extends Website_Controller_Action
             }
 
             setcookie('poll_' . $question->getId(), 1, time()+60*60*24, '/');
-            unset($this->_session->poll[$question->getId()]);
             $thanks = true;
         }
 
