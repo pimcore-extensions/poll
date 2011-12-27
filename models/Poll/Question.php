@@ -221,6 +221,16 @@ class Poll_Question extends Pimcore_Model_Abstract
     }
 
     /**
+     * @return Poll_Question
+     */
+    public function incrementViewsCount()
+    {
+        $this->viewsCount++;
+        $this->save();
+        return $this;
+    }
+
+    /**
      * @return boolean
      */
     public function getMultiple()
