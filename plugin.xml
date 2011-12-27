@@ -8,9 +8,9 @@
         <pluginNiceName>Poll</pluginNiceName>
         <pluginIcon>/plugins/Poll/static/img/chart_bar_icon.png</pluginIcon>
         <pluginServer>plugins.pimcore.org</pluginServer>
-        <pluginVersion>1.0.0</pluginVersion>
-        <pluginRevision>069b0639d0f56e85c74b5fb02f7466bb16214898</pluginRevision>
-        <pluginBuildTimestamp>1324693093</pluginBuildTimestamp>
+        <pluginVersion>1.0.1</pluginVersion>
+        <pluginRevision>14b81f2507bd66010ec293d3240929d6fe3ef82a</pluginRevision>
+        <pluginBuildTimestamp>1324994440</pluginBuildTimestamp>
         <pluginClassName>Poll_Plugin</pluginClassName>
         <pluginIncludePaths>
             <path>/Poll/models</path>
