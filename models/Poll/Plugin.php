@@ -78,6 +78,14 @@ class Poll_Plugin extends Pimcore_API_Plugin_Abstract implements Pimcore_API_Plu
     }
 
     /**
+     * @return boolean
+     */
+    public static function needsReloadAfterInstall()
+    {
+        return true;
+    }
+
+    /**
      * @return string $statusMessage
      */
     public static function uninstall()
