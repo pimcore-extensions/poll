@@ -101,7 +101,9 @@ class Poll_Plugin extends Pimcore_API_Plugin_Abstract implements Pimcore_API_Plu
     {
         $result = true;
         try {
-            Pimcore_API_Plugin_Abstract::getDb()->describeTable("plugin_poll_questions");
+            $stmt = Pimcore_API_Plugin_Abstract::getDb()->query("SHOW TABLES LIKE \"plugin_poll_questions\"");
+            if (false === $stmt->fetch(Zend_Db::FETCH_NUM)) $result = false;
+            $stmt->close();
         } catch (Zend_Db_Exception $e) {
             $result = false;
         }
