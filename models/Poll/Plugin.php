@@ -119,14 +119,14 @@ class Poll_Plugin extends Pimcore_API_Plugin_Abstract implements Pimcore_API_Plu
      */
     public static function isInstalled()
     {
-        $result = true;
         try {
-            Pimcore_API_Plugin_Abstract::getDb()->describeTable("plugin_poll_questions");
-        } catch (Zend_Db_Exception $e) {
-            $result = false;
-        }
+            $stmt = Pimcore_API_Plugin_Abstract::getDb()
+                ->query('SHOW TABLES LIKE "plugin_poll_questions"');
+            if ($stmt->fetch(Zend_Db::FETCH_NUM))
+                return true;
+        } catch (Zend_Db_Exception $e) {}
 
-        return $result;
+        return false;
     }
 
     /**
