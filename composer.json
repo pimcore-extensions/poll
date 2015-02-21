@@ -1,0 +1,22 @@
+{
+    "name": "pimcore-extensions/poll",
+    "type": "pimcore-plugin",
+    "license": "Simple BSD",
+    "description": "Create and publish polls, collect responses and analyze results.",
+    "keywords": ["pimcore", "poll", "voting", "survey"],
+    "homepage": "https://github.com/pimcore-extensions/poll",
+    "authors": [
+        {
+            "name": "Rafal Galka",
+            "email": "rafal.galka@modernweb.pl",
+            "homepage": "http://www.modernweb.pl/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "pimcore/installer-plugin": ">=1"
+    },
+    "autoload": {
+        "psr-0": {"Poll": "models/"}
+    }
+}
