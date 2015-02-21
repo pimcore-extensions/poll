@@ -7,29 +7,22 @@
         </pluginDescription>
         <pluginNiceName>Poll</pluginNiceName>
         <pluginIcon>/plugins/Poll/static/img/chart_bar_icon.png</pluginIcon>
-        <pluginServer>plugins.pimcore.org</pluginServer>
-        <pluginVersion>1.0.1</pluginVersion>
-        <pluginRevision>14b81f2507bd66010ec293d3240929d6fe3ef82a</pluginRevision>
-        <pluginBuildTimestamp>1324994440</pluginBuildTimestamp>
+        <pluginVersion>1.0.2</pluginVersion>
         <pluginClassName>Poll_Plugin</pluginClassName>
         <pluginIncludePaths>
-            <path>/Poll/models</path>
             <path>/Poll/controllers</path>
         </pluginIncludePaths>
-        <pluginNamespaces>
-            <namespace>Poll</namespace>
-        </pluginNamespaces>
         <pluginJsPaths>
-            <path>/Poll/static/js/lib/vtypes.js</path>
             <path>/pimcore/static/js/lib/ext-plugins/ux/RowExpander.js</path>
-            <path>/Poll/static/js/admin/plugin.js</path>
-            <path>/Poll/static/js/admin/poll.js</path>
-            <path>/Poll/static/js/admin/edit.js</path>
-            <path>/Poll/static/js/admin/report.js</path>
-            <path>/Poll/static/js/admin/list.js</path>
+            <path>/plugins/Poll/static/js/lib/vtypes.js</path>
+            <path>/plugins/Poll/static/js/admin/plugin.js</path>
+            <path>/plugins/Poll/static/js/admin/poll.js</path>
+            <path>/plugins/Poll/static/js/admin/edit.js</path>
+            <path>/plugins/Poll/static/js/admin/report.js</path>
+            <path>/plugins/Poll/static/js/admin/list.js</path>
         </pluginJsPaths>
         <pluginCssPaths>
-            <path>/Poll/static/css/admin.css</path>
+            <path>/plugins/Poll/static/css/admin.css</path>
         </pluginCssPaths>
     </plugin>
 </zend-config>
