@@ -28,7 +28,7 @@
  * @author      Rafał Gałka <rafal@modernweb.pl>
  * @copyright   Copyright (c) 2007-2011 ModernWeb (http://www.modernweb.pl)
  */
-class Poll_Answer_Resource extends Pimcore_Model_Resource_Mysql_Abstract
+class Poll_Answer_Resource extends Pimcore_Model_Resource_Abstract
 {
     const TABLE_NAME = 'plugin_poll_answers';
 

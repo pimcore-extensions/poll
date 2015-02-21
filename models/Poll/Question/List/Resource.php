@@ -28,7 +28,7 @@
  * @author      Rafał Gałka <rafal@modernweb.pl>
  * @copyright   Copyright (c) 2007-2011 ModernWeb (http://www.modernweb.pl)
  */
-class Poll_Question_List_Resource extends Pimcore_Model_List_Resource_Mysql_Abstract
+class Poll_Question_List_Resource extends Pimcore_Model_List_Resource_Abstract
 {
     /**
      * Loads a list of objects for the specicifies parameters,

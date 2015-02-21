@@ -335,17 +335,6 @@ class Poll_Question extends Pimcore_Model_Abstract
     }
 
     /**
-     * @return Poll_Question_Resource
-     */
-    public function getResource()
-    {
-        if (!$this->resource) {
-            $this->initResource("Poll_Question");
-        }
-        return $this->resource;
-    }
-
-    /**
      * @return Poll_Question
      */
     public function save()
@@ -418,8 +407,8 @@ class Poll_Question extends Pimcore_Model_Abstract
 
     /**
      * Update question and answers.
-     *
      * @return Poll_Question
+     * @throws Exception
      */
     protected function update()
     {
@@ -451,5 +440,4 @@ class Poll_Question extends Pimcore_Model_Abstract
 
         return $this;
     }
-
 }

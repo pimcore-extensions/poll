@@ -82,7 +82,7 @@ class Poll_Answer extends Pimcore_Model_Abstract
     }
 
     /**
-     * @param integer $id
+     * @param integer $questionId
      * @return Poll_Question
      */
     public function setQuestionId($questionId)

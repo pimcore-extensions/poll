@@ -72,9 +72,8 @@ You can find some screenshots [here](https://github.com/rafalgalka/pimcore-poll-
     I have plan to extend plugin with placeholder snippet that will allow
     you to choose one of the active polls.
 
-## Notes ##
-
-### Pimcore plugin menu ###
-If you merge [this commit](http://bit.ly/sIROeN) into your project, Poll options
-will appear in separate `Plugins` menu in main pimcore toolbar:
-![Pimcore Plugins menu](https://raw.github.com/rafalgalka/pimcore-poll-plugin/develop/docs/screenshots/admin_menu_plugins.png)
+## Changelog ##
+ * 2015-02-21   1.0.2   composer.json - published on [Packagist](https://packagist.org/packages/pimcore-extensions/poll),
+   compatibility with pimcore >= 2.3.0
+ * 2011-12-27   1.0.1   Added poll visits counter
+ * 2011-12-24   1.0.0   First release

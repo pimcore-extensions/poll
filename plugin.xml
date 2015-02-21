@@ -10,6 +10,7 @@
         <pluginVersion>1.0.2</pluginVersion>
         <pluginClassName>Poll_Plugin</pluginClassName>
         <pluginIncludePaths>
+            <path>/Poll/models</path>
             <path>/Poll/controllers</path>
         </pluginIncludePaths>
         <pluginJsPaths>
