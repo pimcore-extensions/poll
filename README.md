@@ -8,46 +8,21 @@ a ready-made solution :)
 ## Installation ##
 
 Just like other Pimcore plugins:
+  * [download plugin by composer](https://www.pimcore.org/wiki/display/PIMCORE3/Extension+management+using+Composer)
+    or use [Extension Manager](https://github.com/pimcore-extensions/manager)
+  * navigate to `Extras -> Extensions` in admin panel
+  * enable & install plugin
+  * reload admin interface
 
-*   clone plugin files into `/plugin/Poll` directory
-*   navigate to `Extras -> Extensions -> Manage Extensions` in admin panel
-*   enable & install plugin
-*   reload admin interface
+If everything went smoothly you will find `Poll` options in `Extras` menu:
 
-If everything went smoothly you will find `Poll` options in `Extras` menu.
+![Poll admin menu extras](https://raw.github.com/pimcore-extensions/poll/master/docs/screenshots/admin_menu_extras.png)
 
-After you created and published a poll you can place it on website using simple snippet:
+After you created and published a poll you can place it on website using snippet:
 
-*   Create new empty snippet in `Documents` and set controller/action on `settings` tab:
+ * Create new Poll snippet:
 
-![Poll website snippet](https://raw.github.com/rafalgalka/pimcore-poll-plugin/develop/docs/screenshots/website_snippet.png)
-
-*   Create `SnippetController` class with empty `pollAction` method in `/website/controllers/`:
-
-```php
-<?php
-class SnippetController extends Website_Controller_Action
-{
-    public function pollAction()
-    {
-    }
-}
-```
-
-*   Put this piece of code into `/website/views/scripts/snippet/poll.php`
-
-```php
-<?php if (Poll_Plugin::isInstalled() && Poll_Question::hasCurrent()): ?>
-    <div class="page-header">
-        <h3><?=$this->input('page-header')?></h3>
-    </div>
-    <?=$this->action('current', 'frontend', 'Poll', array(
-        'omitJquery' => true,   // if you already using jQuery in your project
-        'omitJqueryUi' => true, // same as above with jQuery UI
-        'omitStyles' => true,   // if you already using custom jQuery UI skin
-    ))?>
-<?php endif; ?>
-```
+![Poll website snippet](https://raw.github.com/pimcore-extensions/poll/master/docs/screenshots/website_snippet.png)
 
 *   Place snippet definition in page view script
 
@@ -65,15 +40,15 @@ class SnippetController extends Website_Controller_Action
 *   Polls reports as pie charts
 *   One vote per 24h limit (cookie based)
 
-You can find some screenshots [here](https://github.com/rafalgalka/pimcore-poll-plugin/tree/develop/docs/screenshots)
+You can find some screenshots [here](https://github.com/pimcore-extensions/poll/tree/master/docs/screenshots)
 
 ## Todo ##
-*   At this version it's possible to publish single poll at a time.
+*   Current version allows to publish single poll at a time.
     I have plan to extend plugin with placeholder snippet that will allow
     you to choose one of the active polls.
 
 ## Changelog ##
- * 2015-02-21   1.0.2   composer.json - published on [Packagist](https://packagist.org/packages/pimcore-extensions/poll),
+ * 2015-02-21   1.0.2   composer.json, publish on [Packagist](https://packagist.org/packages/pimcore-extensions/poll),
    compatibility with pimcore >= 2.3.0
  * 2011-12-27   1.0.1   Added poll visits counter
  * 2011-12-24   1.0.0   First release

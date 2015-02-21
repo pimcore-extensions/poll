@@ -1,12 +1,12 @@
 <?php if($this->question instanceof Poll_Question): ?>
     <?php if (!$this->getParam('omitJquery')): ?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <?php endif; ?>
     <?php if (!$this->getParam('omitJqueryUi')): ?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
     <?php endif; ?>
     <?php if (!$this->getParam('omitStyles')): ?>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/black-tie/jquery-ui.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/black-tie/jquery-ui.css" type="text/css" charset="utf-8" />
     <?php endif; ?>
     <script type="text/javascript" src="/plugins/Poll/static/js/frontend/poll.js"></script>
 

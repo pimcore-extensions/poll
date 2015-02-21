@@ -43,6 +43,10 @@ class Poll_FrontendController extends Website_Controller_Action
         }
     }
 
+    public function snippetAction()
+    {
+    }
+
     /**
      * Current active poll.
      *

@@ -70,6 +70,15 @@ class Poll_Plugin extends Pimcore_API_Plugin_Abstract implements Pimcore_API_Plu
                 COLLATE = utf8_general_ci;',
         );
 
+        // add snippet document type
+        $docType = Document_DocType::create();
+        $docType->setName('Poll');
+        $docType->setType('snippet');
+        $docType->setModule('Poll');
+        $docType->setController('frontend');
+        $docType->setAction('snippet');
+        $docType->save();
+
         if (self::_executeQueries($queries)) {
             return "Poll Plugin successfully installed.";
         } else {
@@ -86,6 +95,17 @@ class Poll_Plugin extends Pimcore_API_Plugin_Abstract implements Pimcore_API_Plu
             'answers' => 'DROP TABLE IF EXISTS `plugin_poll_answers`;',
             'questions' => 'DROP TABLE IF EXISTS `plugin_poll_questions`;',
         );
+
+        // remove snippet document type
+        $list = new Document_DocType_List();
+        $list->load();
+
+        foreach ($list->docTypes as $docType) {
+            /* @var $docType Document_DocType */
+            if ($docType->name === 'Poll') {
+                $docType->delete();
+            }
+        }
 
         if (self::_executeQueries($queries)) {
             return "Poll Plugin successfully uninstalled.";
